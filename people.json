@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "description": "John is a web developer and designer",
+    "tags": ["web", "design", "development"],
+    "GitHubProfileLink": "https://github.com/jimmylevell"
+  }
+]
