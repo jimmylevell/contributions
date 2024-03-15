@@ -8,6 +8,9 @@ fetch('./people.json')
 function generateCards(data) {
     const cards = data.map(person => {
         const gitHubProfileImage = person.GitHubProfileLink + ".png";
+        const tagLinks = person.tags.map(tag => {
+            return `<button type="button" class="btn btn-primary"><a href="${tag.link}" target="_blank">${tag.name}</a></button>`;
+        }).join('\n');
 
         return `
             <div class="col">
@@ -15,12 +18,12 @@ function generateCards(data) {
                 <img src="${gitHubProfileImage}" class="thumbnail" alt="Profile Image of ${person.name}">
 
                 <div class="card-body">
-                    <p class="card-text">${person.description}</p>
+                    <p class="card-text">${person.name}, ${person.description}</p>
                     <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                         <a href="${person.GitHubProfileLink}" target="_blank" class="btn btn-sm btn-outline-secondary">GitHub</a>
                     </div>
-                        <small class="text-muted">${person.tags.join(", ")}</small>
+                        ${tagLinks}
                     </div>
                 </div>
                 </div>

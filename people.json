@@ -1,9 +1,28 @@
 [
   {
     "id": 1,
-    "name": "John Doe",
-    "description": "John is a web developer and designer",
-    "tags": ["web", "design", "development"],
+    "name": "Phönix",
+    "description": "Mitglied IT-Kom",
+    "tags": [
+      {
+        "id": 1,
+        "name": "web",
+        "link":"https://github.com/hitobito/hitobito/commits?author=diegosteiner"
+      }
+    ],
     "GitHubProfileLink": "https://github.com/jimmylevell"
+  },
+  {
+    "id": 2,
+    "name": "Filou",
+    "description": "Mitglied der Stand-Up Comedy für Runaways",
+    "tags": [
+      {
+        "id": 1,
+        "name": "web",
+        "link":"https://github.com/hitobito/hitobito/commits?author=diegosteiner"
+      }
+    ],
+    "GitHubProfileLink": "https://github.com/diegosteiner"
   }
 ]
